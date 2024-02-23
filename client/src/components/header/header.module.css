@@ -1,0 +1,41 @@
+.header {
+    height: 90px;
+    padding: 20px 70px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLoggedIn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.address {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 90px;
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 90px;
+        padding: 20px 30px;
+    }
+}
