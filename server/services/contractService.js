@@ -1,6 +1,6 @@
 const { Web3 } = require("web3");
 require("dotenv").config();
-const TestContract = require("../../contracts/build/TestContract.json");
+const TestContract = require("../contracts/build/TestContract.json");
 const contractAddress = process.env.CONTRACT_ADDRESS;
 const infuraUrl = process.env.INFURA_URL + process.env.INFURA_KEY;
 

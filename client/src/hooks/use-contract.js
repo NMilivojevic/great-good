@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import { ethers } from "ethers";
-import TestContract from "../../../contracts/build/TestContract.json";
+import TestContract from "../../contracts/build/TestContract.json";
 import { useAppContext, ACTIONS } from "../context/Context";
 import { contractAddress } from "../utils/utils";
 
