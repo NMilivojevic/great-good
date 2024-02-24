@@ -1,9 +1,9 @@
-const contractService = require("../services/contractService");
+const balanceService = require("../services/balanceService");
 
 const getBalance = async (req, res) => {
     const { account } = req.params;
     try {
-        const balance = await contractService.getBalance(account);
+        const balance = await balanceService.getBalance(account);
         res.json({ balance });
     } catch (error) {
         console.error("Error fetching balance:", error);

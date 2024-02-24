@@ -13,7 +13,7 @@
     padding: 0.625rem 1.25rem;
     border-radius: 0.3125rem;
     box-shadow: 0 0 0.625rem var(--background-secondary);
-    animation: slideIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 4s forwards;
+    animation: slideIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 3s forwards;
 }
 
 .toastError {

@@ -1,8 +1,8 @@
-const contractService = require("../services/contractService");
+const minStakeAmountService = require("../services/minStakeAmountService");
 
 const getMinStakeAmount = async (req, res) => {
     try {
-        const minStakeAmount = await contractService.getMinStakeAmount();
+        const minStakeAmount = await minStakeAmountService.getMinStakeAmount();
         res.json({ minStakeAmount });
     } catch (error) {
         console.error("Error fetching minStakeAmount:", error);

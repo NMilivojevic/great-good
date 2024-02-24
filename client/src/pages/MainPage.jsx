@@ -1,4 +1,4 @@
-import BackgroundEffect from "../components/animation/background/BackgroundEffect";
+import BackgroundEffect from "../components/animations/BackgroundEffect";
 import { useAppContext } from "../context/Context";
 import LoggedInPage from "./LoggedInPage";
 import PublicPage from "./PublicPage";

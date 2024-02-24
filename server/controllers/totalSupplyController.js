@@ -1,8 +1,8 @@
-const contractService = require("../services/contractService");
+const totalSupplyService = require("../services/totalSupplyService");
 
 const getTotalSupply = async (req, res) => {
     try {
-        const totalSupply = await contractService.getTotalSupply();
+        const totalSupply = await totalSupplyService.getTotalSupply();
         res.json({ totalSupply });
     } catch (error) {
         console.error("Error fetching totalSupply:", error);

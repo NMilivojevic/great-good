@@ -1,5 +1,5 @@
-import WelcomeText from "../components/animation/welcome-text/WelcomeText";
-import PublicLayout from "../components/layout/public/PublicLayout";
+import WelcomeText from "../components/animations/WelcomeText";
+import PublicLayout from "../components/layout/PublicLayout";
 import Toast from "../components/toast/Toast";
 import { useAppContext } from "../context/Context";
 
@@ -15,7 +15,7 @@ const PublicPage = ({}) => {
             ? "success"
             : isError
             ? "error"
-            : null;
+            : "info";
 
     return (
         <PublicLayout>

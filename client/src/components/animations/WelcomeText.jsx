@@ -1,4 +1,4 @@
-import styles from "../../styles/animations/animations.module.css"; // Import CSS module for StyledBackground
+import styles from "../../styles/animations/animations.module.css";
 
 const WelcomeText = ({ label }) => {
     return <h1 className={styles.welcomeText}>{label}</h1>;

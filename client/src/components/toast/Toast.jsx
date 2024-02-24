@@ -8,7 +8,7 @@ const Toast = ({ status, message }) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             dispatch({ type: ACTIONS.SET_TOAST, payload: null });
-        }, 6000);
+        }, 4000);
 
         return () => {
             clearTimeout(timer);

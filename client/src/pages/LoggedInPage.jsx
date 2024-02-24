@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import FormControl from "../components/form/form-control/FormControl";
+import FormControl from "../components/form/FormControl";
 import PrimaryHeading from "../components/heading/PrimaryHeading";
 import Info from "../components/info/Info";
-import LoggedInLayout from "../components/layout/logged-in/LoggedInLayout";
+import LoggedInLayout from "../components/layout/LoggedInLayout";
 import Loading from "../components/loading/Loading";
 import useContract from "../hooks/use-contract";
 import useBalance from "../hooks/use-balance";
