@@ -54,24 +54,6 @@ CSS modules were chosen for styling in this test assignment to maintain simplici
 -   **ethers**: A JavaScript library for interacting with the Ethereum blockchain.
 -   **rc-tooltip**: A React component library for creating customizable tooltips.
 
-### Environment Variables
-
-To run the client application locally, you'll need to set up the following environment variables:
-
--   **VITE_BASE_URL**: The base URL of the backend API.
--   **VITE_CONTRACT_ADDRESS**: The address of the smart contract.
-
-#### Setting Up Environment Variables
-
-1. Create a new file named `.env` in the root directory of the `client` folder.
-2. Add the following lines to the `.env` file:
-
-```
-VITE_BASE_URL=http://localhost:3000
-VITE_CONTRACT_ADDRESS=0xdD08C4f14475D419ebe6C9f31865bf3730f7EF92
-
-```
-
 ## Notes
 
 In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
