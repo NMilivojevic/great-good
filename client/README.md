@@ -56,7 +56,9 @@ CSS modules were chosen for styling in this test assignment to maintain simplici
 
 ## Notes
 
-In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
+-   In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
+
+-   The decision not to persist user login state permanently in the browser session was intentional and aligns with the primary focus of the application on smart contract functionalities.
 
 ## Demo
 
