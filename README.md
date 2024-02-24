@@ -30,7 +30,7 @@ Each folder contains its own detailed README.md file with explanation.
     ```
 4. Start the frontend development server:
     ```bash
-    npm dev
+    npm run dev
     ```
 5. Open your browser and navigate to `http://localhost:5173` to view the frontend application.
 
