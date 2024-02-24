@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project serves as the backend for a React application integrated with blockchain contracts using ethers.js for Ethereum blockchain interaction. The backend is responsible for handling API requests related to blockchain interactions.
+This project serves as the backend for the React part of the application. The backend is responsible for handling API requests related to blockchain interactions.
 
 ## Project setup
 
