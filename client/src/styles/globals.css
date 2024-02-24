@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+    --background-primary: #000000;
+    --background-secondary: rgba(0, 0, 0, 0.3);
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --border-primary: #404040;
+    --border-primary-light: #606060;
+    --border-primary-dark: #808080;
+    --color-primary: rgba(2, 3, 128, 1);
+    --color-primary-dark: rgba(88, 125, 255, 0.5);
+    --color-primary-light: rgba(63, 94, 251, 1);
+    --color-secondary: rgba(139, 0, 134, 1);
+    --color-secondary-light: rgba(255, 44, 211, 1);
+    --error: #dc3545;
+    --success: #28a745;
+    --info: #007bff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}

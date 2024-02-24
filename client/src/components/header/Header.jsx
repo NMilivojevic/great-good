@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "../../styles/header/header.module.css";
 import logoHeaderSrc from "../../assets/images/logo-header.webp";
 import Image from "../image/Image";
 import PrimaryButton from "../button/PrimaryButton";

@@ -1,0 +1,25 @@
+.mainLayout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+.loggedInLayout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    flex: 1;
+    padding-top: 3.125rem;
+}
+
+.publicLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

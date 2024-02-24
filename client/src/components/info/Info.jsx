@@ -1,15 +1,15 @@
+import styles from "../../styles/text/text.module.css";
 import { useAppContext } from "../../context/Context";
-import styles from "./info.module.css";
 
 const Info = () => {
     const { state } = useAppContext();
     const { balance, totalSupply } = state;
     return (
         <div className={styles.infoContainer}>
-            <div className={styles.box}>
+            <div className={styles.infoBox}>
                 <p>Your balance:</p> <p>{balance} MATIC</p>
             </div>
-            <div className={styles.box}>
+            <div className={styles.infoBox}>
                 <p>Total supply:</p> <p>{totalSupply} MATIC</p>
             </div>
         </div>

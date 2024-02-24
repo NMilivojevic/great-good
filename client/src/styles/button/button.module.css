@@ -1,0 +1,30 @@
+.primaryButton {
+    background: linear-gradient(
+        90deg,
+        var(--color-primary-light) 20%,
+        var(--color-secondary-light) 100%
+    );
+    border: none;
+    color: var(--text-primary);
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.primaryButton:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.primaryButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 480px) {
+    .primaryButton {
+        padding: 0.5rem 1rem;
+    }
+}

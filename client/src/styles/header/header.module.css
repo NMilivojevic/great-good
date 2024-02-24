@@ -1,0 +1,33 @@
+.header {
+    height: 5.625rem;
+    padding: 1.25rem 4.375rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLoggedIn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.address {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 30px;
+    }
+}

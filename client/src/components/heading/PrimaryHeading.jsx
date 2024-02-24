@@ -1,7 +1,7 @@
-import styles from "./primary-heading.module.css";
+import styles from "../../styles/text/text.module.css";
 
 const PrimaryHeading = ({ label }) => {
-    return <h1 className={styles.heading}>{label}</h1>;
+    return <h1 className={styles.primaryHeading}>{label}</h1>;
 };
 
 export default PrimaryHeading;

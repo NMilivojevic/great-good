@@ -1,9 +1,0 @@
-.heading {
-    font-size: 46px;
-}
-
-@media screen and (max-width: 480px) {
-    .heading {
-        font-size: 24px;
-    }
-}

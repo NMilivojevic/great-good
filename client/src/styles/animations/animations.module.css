@@ -1,0 +1,56 @@
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.mainWrapper {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.backgroundEffect {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: radial-gradient(
+            circle at 25% 55%,
+            var(--color-primary) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 75% 55%,
+            var(--color-secondary) 0%,
+            var(--background-primary) 35%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            var(--color-primary) 0%,
+            var(--color-secondary) 100%
+        );
+}
+
+.welcomeText {
+    animation: fadeInOut 6s ease-in-out infinite;
+    animation-direction: alternate;
+    font-size: 2.25rem;
+}
+
+@media screen and (max-width: 480px) {
+    .welcomeText {
+        font-size: 1.5rem;
+    }
+}

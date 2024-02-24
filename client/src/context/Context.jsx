@@ -13,6 +13,7 @@ const initialState = {
     isSuccess: false,
     toast: null,
     message: "",
+    inputError: false,
 };
 
 export const ACTIONS = {
@@ -29,6 +30,7 @@ export const ACTIONS = {
     SET_SUCCESS: "SET_SUCCESS",
     SET_TOAST: "SET_TOAST",
     SET_MESSAGE: "SET_MESSAGE",
+    SET_INPUT_ERROR: "SET_INPUT_ERROR",
 };
 
 const reducer = (state, action) => {
@@ -59,6 +61,8 @@ const reducer = (state, action) => {
             return { ...state, toast: action.payload };
         case ACTIONS.SET_MESSAGE:
             return { ...state, message: action.payload };
+        case ACTIONS.SET_INPUT_ERROR:
+            return { ...state, inputError: action.payload };
         default:
             return state;
     }
