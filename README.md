@@ -1,4 +1,4 @@
-# Great Good Test Assignment
+# GreatGood Test Assignment
 
 ## Description
 
