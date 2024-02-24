@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a full-stack application for simple staking contract on Mumbai testnet.
+This project is a full-stack application for a simple staking contract on Mumbai testnet.
 
 ## Prerequisites
 

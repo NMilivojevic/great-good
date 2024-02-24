@@ -7,7 +7,7 @@ This project serves as the backend for the React part of the application. The ba
 ## Project setup
 
 -   **Development Environment**: Developed using Node.js and Express.js framework.
--   **Blockchain Integration**: Utilized ethers.js for interacting with Ethereum smart contracts.
+-   **Blockchain Integration**: Utilized Web3.js for interacting with Ethereum smart contracts.
 -   **Folder Structure**: Organized the backend into the following structure:
     -   `/contracts`: Contains Solidity smart contract files and their compiled JSON artifacts.
     -   `/controllers`: Handles the logic for each route.
