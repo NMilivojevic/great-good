@@ -58,7 +58,7 @@ CSS modules were chosen for styling in this test assignment to maintain simplici
 
 To run the client application locally, you'll need to set up the following environment variables:
 
--   **VITE_BASE_URL**: The base URL of your backend API. This variable should point to the address where your backend server is running.
+-   **VITE_BASE_URL**: The base URL of the backend API.
 -   **VITE_CONTRACT_ADDRESS**: The address of the smart contract.
 
 #### Setting Up Environment Variables
