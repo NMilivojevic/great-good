@@ -59,6 +59,26 @@ Error handling might be omitted or kept minimal to streamline development effort
 -   **dotenv**: Library for loading environment variables from a `.env` file.
 -   **web3**: Ethereum JavaScript API for interacting with Ethereum nodes.
 
+## Environment Variables
+
+To run the server application locally, you'll need to set up the following environment variables:
+
+-   **INFURA_URL**: The URL of the Infura endpoint.
+-   **INFURA_KEY**: The Infura project ID.
+-   **CONTRACT_ADDRESS**: The address of the smart contract.
+
+### Setting Up Environment Variables
+
+1. Create a new file named `.env` in the root directory of the `server` folder.
+2. Add the following lines to the `.env` file:
+
+```
+INFURA_URL=https://polygon-mumbai.infura.io/v3/
+INFURA_KEY=7dca142182e54feabf04bacfd87732d7
+CONTRACT_ADDRESS=0xdD08C4f14475D419ebe6C9f31865bf3730f7EF92
+
+```
+
 ## Demo
 
 -   Check out the live demo of the React app hosted on Glitch: [Great Good App](https://great-good-app.glitch.me/)
