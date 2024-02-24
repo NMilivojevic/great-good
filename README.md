@@ -64,7 +64,7 @@ To run the application server locally, you'll need to set up the following envir
 ```
 INFURA_URL=https://polygon-mumbai.infura.io/v3/
 INFURA_KEY=7dca142182e54feabf04bacfd87732d7
-CONTRACT_ADDRESS=0xdD08C4f14475D419ebe6C9f31865bf3730f7EF92
+CONTRACT_ADDRESS=[Smart contract address provided in the instructions document]
 
 ```
 
@@ -82,7 +82,7 @@ To run the client application locally, you'll need to set up the following envir
 
 ```
 VITE_BASE_URL=http://localhost:3000
-VITE_CONTRACT_ADDRESS=0xdD08C4f14475D419ebe6C9f31865bf3730f7EF92
+VITE_CONTRACT_ADDRESS=[Smart contract address provided in the instructions document]
 
 ```
 
