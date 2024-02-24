@@ -98,7 +98,3 @@ The backend is built with Node.js and Express.js. It provides APIs to handle req
 
 -   Check out the live demo of the React app hosted on Glitch: [Great Good App](https://great-good-app.glitch.me/)
 -   The backend API hosted on Glitch: [Great Good API](https://great-good-api.glitch.me/)
-
-```
-
-```
