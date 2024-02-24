@@ -4,12 +4,18 @@
 
 This project is a full-stack application for simple staking contract on Mumbai testnet.
 
+## Prerequisites
+
+-   Node 18
+
 ## Project Structure
 
 The project is organized into separate frontend and backend folders:
 
 -   **client**: Contains the frontend codebase built with React.js.
 -   **server**: Contains the backend codebase built with Node.js and Express.js.
+
+Each folder contains its own detailed README.md file with explanation.
 
 ## Getting Started
 
