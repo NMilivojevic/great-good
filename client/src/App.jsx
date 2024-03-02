@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { serializeError } from "eth-rpc-errors";
 import { ethers } from "ethers";
 import TestContract from "../contracts/build/TestContract.json";
-import logoHeaderSrc from "./assets/images/logo-header.webp";
-import logoFooterSrc from "./assets/images/logo-footer.webp";
+import logoHeaderSrc from "./assets/logo-header.webp";
+import logoFooterSrc from "./assets/logo-footer.webp";
 
 const baseUrl = import.meta.env.VITE_BASE_URL;
 const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
