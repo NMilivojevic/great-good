@@ -278,9 +278,14 @@ function App() {
                     <>
                         <div className="background-effect" />
                         <section className="connected">
-                            <h2>Input your amount</h2>
                             <div className="form-control">
+                                <label htmlFor="amount">
+                                    Input your amount
+                                </label>
                                 <input
+                                    type="text"
+                                    name="amount"
+                                    id="amount"
                                     placeholder="Enter amount"
                                     value={amount}
                                     onChange={handleOnChange}
