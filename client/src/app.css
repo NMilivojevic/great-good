@@ -194,6 +194,7 @@ button:disabled {
 }
 
 h1 {
+    text-align: center;
     animation: fadeInOut 6s ease-in-out infinite;
     animation-direction: alternate;
     font-size: 2.25rem;
@@ -354,7 +355,7 @@ input:focus {
 /* Responsive */
 @media screen and (max-width: 768px) {
     header {
-        padding: 20px 30px;
+        padding: 1rem 1.875rem;
     }
 }
 
@@ -377,7 +378,11 @@ input:focus {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1.7rem;
     }
 
     input {
