@@ -21,7 +21,10 @@ app.get("/balance/:account", async (req, res) => {
     const { account } = req.params;
     try {
         const balance = await contract.methods.balanceOf(account).call();
-        const parsedBalance = (parseFloat(balance) / 10 ** 18).toFixed(18);
+        let parsedBalance = parseFloat(balance) / 10 ** 18;
+        if (Math.abs(parsedBalance - 1e-8) < Number.EPSILON) {
+            parsedBalance = parsedBalance.toFixed(18);
+        }
         res.json({ payload: parsedBalance });
     } catch (error) {
         console.error("Error fetching balance:", error);
