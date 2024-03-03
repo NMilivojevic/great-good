@@ -56,7 +56,7 @@ CSS modules were chosen for styling in this test assignment to maintain simplici
 
 ## Notes
 
-In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
+In order for account switching in MetaMask to reflect in the user interface, user must expose the accounts.
 
 ## Demo
 
