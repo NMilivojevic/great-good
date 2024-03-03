@@ -5,8 +5,8 @@ import TestContract from "../contracts/build/TestContract.json";
 import logoHeaderSrc from "./assets/logo-header.webp";
 import logoFooterSrc from "./assets/logo-footer.webp";
 
-const baseUrl = import.meta.env.VITE_BASE_URL;
-const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
+const baseUrl = import.meta.env.VITE_BASE_URL; // Base URL for API requests
+const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS; // Ethereum contract address
 
 function App() {
     const [contract, setContract] = useState(null);
@@ -24,6 +24,38 @@ function App() {
     const [loading, setLoading] = useState(false);
 
     const isMetamask = window.ethereum && window.ethereum.isMetaMask;
+
+    const handleAccountChange = (accounts) => setAccount(accounts[0]);
+    useEffect(() => {
+        if (account) {
+            window.ethereum.on("accountsChanged", handleAccountChange);
+            fetchContract();
+            fetchTotalSupply();
+            fetchBalance();
+            fetchMinStakeAmount();
+        }
+
+        return () => {
+            window.ethereum.removeListener(
+                "accountsChanged",
+                handleAccountChange
+            );
+        };
+    }, [account]);
+
+    useEffect(() => {
+        if (notification.toast) {
+            const timeoutId = setTimeout(() => {
+                setNotification({
+                    status: "",
+                    message: "",
+                    toast: false,
+                    inputError: false,
+                });
+            }, 3000);
+            return () => clearTimeout(timeoutId);
+        }
+    }, [notification.toast]);
 
     const handleConnect = async () => {
         if (!isMetamask) {
@@ -104,23 +136,27 @@ function App() {
         }
     };
 
-    const handleAccountChange = (accounts) => setAccount(accounts[0]);
-    useEffect(() => {
-        if (account) {
-            window.ethereum.on("accountsChanged", handleAccountChange);
-            fetchContract();
-            fetchTotalSupply();
-            fetchBalance();
-            fetchMinStakeAmount();
-        }
+    const handleOnChange = (e) => {
+        const input = e.target.value;
+        const regex = /^[0-9.]*$/; // Regular expression to match numbers and decimals
 
-        return () => {
-            window.ethereum.removeListener(
-                "accountsChanged",
-                handleAccountChange
-            );
-        };
-    }, [account]);
+        if (regex.test(input)) {
+            setAmount(input);
+            setNotification({
+                status: "",
+                message: "",
+                toast: false,
+                inputError: false,
+            });
+        } else {
+            setNotification({
+                status: "error",
+                message: "Please enter a valid number.",
+                toast: false,
+                inputError: true,
+            });
+        }
+    };
 
     const handleStake = async () => {
         setLoading(true);
@@ -213,42 +249,6 @@ function App() {
             setAmount("");
         }
     };
-
-    const handleOnChange = (e) => {
-        const input = e.target.value;
-        const regex = /^[0-9.]*$/;
-
-        if (regex.test(input)) {
-            setAmount(input);
-            setNotification({
-                status: "",
-                message: "",
-                toast: false,
-                inputError: false,
-            });
-        } else {
-            setNotification({
-                status: "error",
-                message: "Please enter a valid number.",
-                toast: false,
-                inputError: true,
-            });
-        }
-    };
-
-    useEffect(() => {
-        if (notification.toast) {
-            const timeoutId = setTimeout(() => {
-                setNotification({
-                    status: "",
-                    message: "",
-                    toast: false,
-                    inputError: false,
-                });
-            }, 3000);
-            return () => clearTimeout(timeoutId);
-        }
-    }, [notification.toast]);
 
     return (
         <div className="container">
