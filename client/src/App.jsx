@@ -26,6 +26,7 @@ function App() {
     const isMetamask = window.ethereum && window.ethereum.isMetaMask;
 
     const handleAccountChange = (accounts) => setAccount(accounts[0]);
+
     useEffect(() => {
         if (account) {
             window.ethereum.on("accountsChanged", handleAccountChange);
