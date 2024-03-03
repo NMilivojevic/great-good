@@ -389,7 +389,20 @@ input:focus {
         width: 100%;
     }
 
+    .connected {
+        padding-top: 2rem;
+    }
+
     .info {
         flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .info div {
+        padding: 1rem;
+    }
+
+    .info div:last-child {
+        margin-bottom: 1rem;
     }
 }
