@@ -36,7 +36,7 @@ The project uses a single CSS file (`app.css`) for styling.
 
 ## Notes
 
--   In order for account switching in MetaMask to reflect in the user interface, users must expose the accounts.
+-   In order for account switching in MetaMask to reflect in the user interface, user must expose the accounts.
 
 -   The decision not to persist user login state permanently in the browser session was intentional and aligns with the primary focus of the application on smart contract functionalities.
 
