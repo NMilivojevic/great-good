@@ -18,7 +18,7 @@ This project is a React application integrated with blockchain contracts using e
         -   `styles/`: Includes CSS modules for styling.
         -   `assets/`: Stores images and other static assets.
         -   `utils/`: Contains utility functions.
-        -   `App.js` and `index.js`: Entry points for the application.
+        -   `App.jsx` and `main.jsx`: Entry points for the application.
 
 ## State Management
 
