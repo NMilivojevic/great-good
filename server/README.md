@@ -8,45 +8,23 @@ This project serves as the backend for the React part of the application. The ba
 
 -   **Development Environment**: Developed using Node.js and Express.js framework.
 -   **Blockchain Integration**: Utilized Web3.js for interacting with Ethereum smart contracts.
--   **Folder Structure**: Organized the backend into the following structure:
-    -   `/contracts`: Contains Solidity smart contract files and their compiled JSON artifacts.
-    -   `/controllers`: Handles the logic for each route.
-    -   `/routes`: Defines routes and their corresponding handlers.
-    -   `/services`: Provides functionality for interacting with the blockchain or other backend operations.
-    -   `/utils`: Houses utility functions and configurations.
+-   **Folder Structure**: Organized the backend into a single file named `app.js` for simplicity and streamlined development.
 
 ## Project Structure
 
-The project is structured as follows:
+The project now consists of a single file:
 
--   `services`: Contains modules responsible for interacting with the Ethereum blockchain and smart contract.
--   `controllers`: Handles HTTP request/response logic.
--   `routes`: Defines API endpoints and routes requests to the appropriate controllers.
+-   `app.js`: Contains all the backend logic, including route handling and contract interaction.
 
 ## Polygon Mumbai Test Network Connection
 
 The backend service connects to the Polygon Mumbai Test Network using the Infura endpoint.
 
-## Flow for Balance Retrieval
+## Available Routes
 
-1. **Service Layer**:
-
-    - The `balanceService.js` module (`/services/balanceService.js`) defines the `getBalance` function.
-    - This function interacts with the Ethereum blockchain using the `contractService` to retrieve the balance of a specified account.
-
-2. **Controller Layer**:
-
-    - The `balanceController.js` module (`/controllers/balanceController.js`) imports the `getBalance` function from `balanceService.js`.
-    - It defines an async function `getBalance` that handles HTTP requests to fetch balance information.
-    - Upon receiving a request, it calls the `getBalance` function from `balanceService` and sends the balance as a JSON response.
-
-3. **Routing Layer**:
-    - The `balanceRoutes.js` module (`/routes/balanceRoutes.js`) defines a route to handle GET requests for retrieving balance.
-    - It imports the `getBalance` function from the `balanceController` and sets up a route to trigger this function when a GET request is made to `/:account`.
-
-## Flow for Minimum Stake Amount and Total Supply
-
-The flow for retrieving minimum stake amount and total supply follows a similar pattern as the balance retrieval flow, with separate service, controller, and route modules for each functionality. These modules are named accordingly (`minStakeService.js`, `minStakeController.js`, `minStakeRoutes.js`, `totalSupplyService.js`, `totalSupplyController.js`, `totalSupplyRoutes.js`) and follow the same structure and organization as described above for balance retrieval.
+-   `/balance/:account`: Get balance information for a specified account.
+-   `/minStakeAmount`: Get minimum stake amount information.
+-   `/totalSupply`: Get total supply information.
 
 ## Error handling
 
