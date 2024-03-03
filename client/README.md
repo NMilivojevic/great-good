@@ -8,7 +8,7 @@ This project is a React application integrated with blockchain contracts using e
 
 -   **Development Environment**: Bootstraped with Vite.
 -   **Blockchain Integration**: Utilized ethers.js for interaction with Ethereum smart contracts.
--   **Folder Structure**: Organized the project into a single file named `app.jsx` for simplicity and streamlined development.
+-   **Folder Structure**: Organized the project into a single file named `app.jsx` for simplicity and streamlined development, alongside `app.css` for styling.
 
 ## State Management
 
